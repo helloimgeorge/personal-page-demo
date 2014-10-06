@@ -5,3 +5,69 @@ body {
     font-size: 18px;
     font-weight: 300;
 }
+
+header, section, footer {
+	padding: 1em;
+}
+
+header {
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	color: #FFF; 
+}
+
+header img {
+	position: absolute;
+    clip: rect(0px, 200px, 400px, 0);
+    /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+}
+
+/* Descendent selectors, used to change hyperlink colors
+*/
+
+header a:link,
+header a:visited {
+	color: #CCC;
+	text-decoration: none; 
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em
+}
+
+header a:hover, /* how to hover and focus */
+header a:focus {
+	text-decoration: underline; 
+	color: #CCC;
+	background-color: #CC0000; 
+}
+
+#about, 
+#projects {
+	background-color: #F1F1F1; 
+}
+
+#education,
+#contact {
+	background-color: #868E8E; 
+}
+
+footer {
+	background-color: #C1C1C1; 
+}
+
+#about img {
+	max-height: 240px;
+	max-height: 240px;
+	float: left;
+	margin-right: 1em; 
+	opacity: 1.0;
+}
+
+#about img:hover {
+	opacity: 0.7;
+}
+
+#education {
+	clear: both; 
+}
